@@ -80,6 +80,12 @@ a{
 .containerBuscarAmb a{
     gap: 0.5vw;
 }
+
+@media screen and (max-width: 1068px){
+    nav{
+        flex-wrap: wrap;
+    }
+}
 /*Fim Cabeçalho (Header)*/
 
 /*Apresetação (Titulo)*/
@@ -110,6 +116,19 @@ h1{
     max-width: 236px;
 }
 
+@media screen and (max-width: 1068px){
+    .containerApresentacao{
+        flex-wrap: wrap;
+    }
+
+    .containerApresentacao h2{
+        font-size: 5.2rem;
+    }
+
+    .containerApresentacao p{
+        max-width: 275px;
+    }
+}
 /*Apresentação (Titulo)*/
 
 /*Escolha seu curso*/
@@ -190,4 +209,52 @@ h1{
 .marginSoftSkill{
     margin: 1vw 0;
 }
+
+@media screen and (max-width: 1068px){
+    .containerEscolhaCurso{
+        flex-wrap: wrap;
+    }
+}
 /*Escolha seu curso*/
+
+/*Responsividade Mobile*/
+@media screen and (max-width: 767px){
+    .marginSite {
+        margin: 10vw 5vw;
+    }
+
+    /*Cabeçalho*/
+    .containerMenuPrincipal{
+        flex-wrap: wrap;
+    }
+    /*Fim Cabeçalho*/
+
+    /*Apresentação*/
+    .containerApresentacao h2 {
+        font-size: 2.3rem;
+    }
+    /*Fim Apresentação*/
+
+    /*Escolha seu Curso*/
+    .personagemCurso{
+        display: none;
+    }
+
+    .containerEscolhaCurso div{
+        flex-wrap: wrap;
+    }
+
+    .containerNomeCurso{
+        min-width: 0;
+    }
+
+    .btnEscolheCurso{
+        width: 10vw;
+    }
+
+    .pontosSoftSkill img {
+        width: 5vw;
+    }
+    /*Fim Escolha seu Curso*/
+}
+/*Fim Responsividade Mobile*/
